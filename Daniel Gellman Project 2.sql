@@ -1,6 +1,5 @@
 --Project Name: Project 2
 -- by: Daniel Gellman
--- ID : 205948797
 -- Q1
 SELECT p.ProductID,Name,Color ,ListPrice, Size  FROM Production.Product p 
 LEFT JOIN Sales.SalesOrderDetail s ON p.ProductID = s.ProductID
@@ -23,7 +22,7 @@ JOIN Person.Person p ON p.BusinessEntityID = c.CustomerID
 JOIN Sales.SalesOrderHeader s ON s.CustomerID = c.CustomerID
 ) AS myorders
 ORDER BY myorders.countoforders DESC
--- ξφιιο ωδωξεϊ ωεπιν ΰαμ δξζδδ μχεη γεξδ ΰφμι λξε αθαμϊ δγεβξΰ
+-- Γ®Γ¶Γ©Γ©Γ― ΓΉΓ¤ΓΉΓ®Γ¥ΓΊ ΓΉΓ¥Γ°Γ©Γ­ Γ Γ΅Γ¬ Γ¤Γ®Γ¦Γ¤Γ¤ Γ¬Γ·Γ¥Γ§ Γ£Γ¥Γ®Γ¤ Γ Γ¶Γ¬Γ© Γ«Γ®Γ¥ Γ΅Γ¨Γ΅Γ¬ΓΊ Γ¤Γ£Γ¥ΓΆΓ®Γ 
 
 -- Q4 
 SELECT FirstName,LastName , JobTitle , HireDate , 
